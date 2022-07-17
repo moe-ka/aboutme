@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(241,85,150,1) 0%, rgba(255,255,255,1) 100%);
+    /* background-color: antiquewhite; */
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    flex-direction: column;
+    max-width: 700px;
+    margin: auto;
+    background-color: rgba(241,85,150,1);
+    border-radius: 20px;
+    color: white;
+    line-height: 1.4em;
+
+}
+
+.main-1 h1{
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+article p{
+    padding: 0 20px;
+    
+}
+
+.main-2{
+   
+    margin: 20px 0;
+}
+
+.main-2 p{
+    text-align: center;
+    margin: 20px 0;
+}
+.list{
+    display: grid;
+    grid-template-columns:auto auto;
+    list-style: none;
+}
+
+.list li{
+    padding: 5px 0;
+    font-weight: bold;
+
+}
+
+.list li span{
+    font-weight: normal;
+}
+/* button */
+.button{
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+.button a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 100px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: rgba(241,85,150,1);
+    border: 1px solid white;
+
+}
+
+.button a:hover{
+    background-color: rgba(241,85,150,1);
+    border: 1px solid white;
+    color: white;
+}
+/* end-button */
+@media (max-width:576px) {
+    article{
+        flex-direction: column;
+    }
+    .list{
+        grid-template-columns:auto;
+    }
+    article p{
+        padding: 10px 0;
+    }
+
+    
+}
+
+@media (min-width:576px) {
+
+    article{
+        padding: 0 20px;
+    }
+    
+}
